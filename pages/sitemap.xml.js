@@ -45,4 +45,4 @@ export async function getServerSideProps({ res }) {
   };
 }
 
-// export default SiteMap;
+export default SiteMap;
