@@ -1,0 +1,54 @@
+.psectionMainWrap {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+}
+.psectionMain {
+  display: block;
+  width: 100%;
+  padding-top: 0;
+  align-items: center;
+  justify-content: center;
+}
+.psectionContainer {
+  display: block;
+}
+.psectionContent {
+}
+
+.psectionMainBgWrap {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right:0;
+  width: 100%;
+  z-index: -1;
+  height: 200vh;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  overflow: hidden;
+}
+.psectionMainBg {
+  display: block;
+  position: absolute;
+  top: 0;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  right: 0;
+  height: 200vh;
+  width: 1200px;
+  margin-left: -600px;
+  z-index: -1;
+  float: right;
+  background: white;
+  color:white;
+  align-content: right;
+  justify-content: right;
+}
+
+.psectionMainBgImg{
+  position: absolute;
+  width: 100%;
+  right: 0;
+}

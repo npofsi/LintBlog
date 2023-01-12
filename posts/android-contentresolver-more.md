@@ -2,22 +2,22 @@
 title: Android ContentProvider 使用小计
 date: 2020-03-14 19:34:50 +08:00
 categories:
-- Tip
-tags: 
-- Android
-- Code
+  - Tip
+tags:
+  - Android
+  - Code
+img: "./images/bg-test.jpg"
 ---
 
 Android 应用在选取文件时推荐使用 `Intent.ACTION_GET_CONTENT` 意图，而不是使用应用自己创建的文件选择器并获取读取文件权限。
 
-因为从 Android Marshmallow 开始 Android 权限管理开始变得更加整顿严谨，几个版本以来  Android 解决了权限管理松散的问题。
+因为从 Android Marshmallow 开始 Android 权限管理开始变得更加整顿严谨，几个版本以来 Android 解决了权限管理松散的问题。
 
 其实 `ContentProvider` 并不是什么新事物，在 Android 中一直存在着，但随着权限的明确划分，权限的索取要更加的明确，否则会极大的影响用户体验，这时使用系统给予的机制会更加符合操作逻辑，也可以减少工作量。
 
 <!-- more -->
 
 下面是一个选取文件的简单使用场景
-
 
 ```java
 //需要指定一个 int 来定位返回值

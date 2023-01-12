@@ -1,0 +1,71 @@
+.navContainer {
+  display: inline-flex;
+  
+  z-index: 5;
+}
+
+
+
+.navHeader{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.navList {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  /* overflow: hidden; */
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem {
+  float: left;
+  display: inline;
+  text-align: center;
+  padding: 0px 0px;
+  z-index: 5;
+}
+
+.navLink {
+  display: block;
+  color: #efefef;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Overpass","Noto Sans JP", -apple-system, "Helvetica Neue", "Segoe UI", sans-serif;
+}
+
+.navItem:hover .navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+
+
+.navActived{
+  border-bottom: 4px  solid #efefef;
+}
+
+.headerWrap {
+  display: block;
+  background-color: transparent;
+  width: 100%;
+}
+.navTitle{
+  display: inline;
+  color: #efefef;
+}
+.navLogo{
+  display: inline;
+  width: 64px;
+  height: 64px;
+}
+
+.headerNotification {
+
+}

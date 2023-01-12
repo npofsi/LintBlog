@@ -2,22 +2,26 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import Section_Layout from "../components/lintlib/section_layout";
+import Section_Layout from "./lintlib/section";
 
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.scss";
-import Navbar from "./navbar";
+import Header from "./header";
+import Footer from "./footer";
 
 const name = "npofsi";
 export const siteTitle = "npofsi's blog";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, navActiveIndex }) {
   return (
     <>
-      <header>
-        <Navbar></Navbar>
-      </header>
-
+      <div className={styles.pageContainer}>
+        <div className={styles.contentWrap}>
+        <Header activeIndex={navActiveIndex} />
+        <main>{children}</main></div>
+        <Footer />
+      </div>
+      {/* 
       <Section_Layout corner="right">
         <div className={styles.container}>
           <Head>
@@ -30,7 +34,7 @@ export default function Layout({ children, home }) {
               property="og:image"
               content={`https://og-image.vercel.app/${encodeURI(
                 siteTitle
-              )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+              )}.png?theme=light&md=1&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
             />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
@@ -43,11 +47,11 @@ export default function Layout({ children, home }) {
                   priority
                   src="/images/profile.jpg"
                   className={utilStyles.borderCircle}
-                  height={144}
-                  width={144}
+                  height={145}
+                  width={145}
                   alt={name}
                 />
-                <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                <h2 className={utilStyles.heading2Xl}>{name}</h2>
               </>
             ) : (
               <>
@@ -57,17 +61,17 @@ export default function Layout({ children, home }) {
                       priority
                       src="/images/profile.jpg"
                       className={utilStyles.borderCircle}
-                      height={108}
-                      width={108}
+                      height={109}
+                      width={109}
                       alt={name}
                     />
                   </a>
                 </Link>
-                <h2 className={utilStyles.headingLg}>
+                <h3 className={utilStyles.headingLg}>
                   <Link href="/">
                     <a className={utilStyles.colorInherit}>{name}</a>
                   </Link>
-                </h2>
+                </h3>
               </>
             )}
           </header>
@@ -80,7 +84,7 @@ export default function Layout({ children, home }) {
             </div>
           )}
         </div>
-      </Section_Layout>
+      </Section_Layout> */}
     </>
   );
 }
