@@ -1,11 +1,12 @@
 .navContainer {
-  display: inline-flex;
-  
+  display: block;
   z-index: 5;
 }
 
+.navbar{
+  display: inline-flex;
 
-
+}
 .navHeader{
   text-align: center;
   align-items: center;
@@ -67,5 +68,14 @@
 }
 
 .headerNotification {
+  background-color: #fff;
+  color: #5bbee4;
+}
 
+.headerNotificationWrap {
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

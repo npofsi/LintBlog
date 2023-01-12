@@ -33,14 +33,15 @@ export default function Header({ activeIndex }) {
   return (
     <>
       <div className={styles.headerWrap}>
-        <header
-          className={classNames(
-            styles.navHeader
-          )}
-        >
+        <header className={classNames(styles.navHeader)}>
+          
           <div className={classNames(styles.navContainer)}>
-            <div className={styles.headerNotification}></div>
-            <nav>
+          <div className={styles.headerNotificationWrap}>
+            <div className={styles.headerNotification}>
+              <p>This website is under BUILDING</p>
+            </div>
+          </div>
+            <nav className={styles.navbar}>
               <h1 className={styles.navTitle}>{title}</h1>
               <ul className={styles.navList}>
                 {Object.entries(navigations).map(([k, v], i) => (
@@ -60,7 +61,6 @@ export default function Header({ activeIndex }) {
                 ))}
               </ul>
             </nav>
-            <div className="underlinex"></div>
           </div>
         </header>
       </div>
