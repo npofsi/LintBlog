@@ -38,7 +38,7 @@ export default function Header({ activeIndex }) {
           <div className={classNames(styles.navContainer)}>
           <div className={styles.headerNotificationWrap}>
             <div className={styles.headerNotification}>
-              <p>This website is under CONSTRUCTING</p>
+              <p>This website is under CONSTRUCTION</p>
             </div>
           </div>
             <nav className={styles.navbar}>
