@@ -28,19 +28,30 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
   return (
-    <Layout navActiveIndex={1}>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
-      <SectionMain>
-        <Article imgSrc={postData.img}>
-          <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-          <div className={utilStyles.lightText}>
-            <Date dateString={postData.date} />
-          </div>
-          <div className={utilStyles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        </Article>
-      </SectionMain>
-    </Layout>
+    <>
+      <Layout navActiveIndex={1}>
+        <Head>
+          <title>{postData.title}</title>
+        </Head>
+        <SectionMain>
+          <Article imgSrc={postData.img}>
+            <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+            <div className={utilStyles.lightText}>
+              <Date dateString={postData.date} />
+            </div>
+            <div
+              className={utilStyles.content}
+              dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+            />
+          </Article>
+        </SectionMain>
+      </Layout>
+      <style jsx>{`
+        a {
+          color:#5bbee5;
+          text-decoration: underline;
+        }
+      `}</style>
+    </>
   );
 }

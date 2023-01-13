@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import Layout from "../components/layout";
 import SectionMain from "../components/sectionMain";
 
@@ -13,6 +14,10 @@ const friends = {
 export default function Intro({}) {
   return (
     <>
+      <Head>
+        <title>Introduction</title>
+      </Head>
+
       <Layout navActiveIndex={2}>
         <SectionMain>
           <div className={styles.introWrap}>
@@ -60,7 +65,9 @@ export default function Intro({}) {
                   <h4>Friends:</h4>
                   {Object.entries(friends).map(([k, v], i) => (
                     <p>
-                      <Link href={v} passHref><a className={styles.friendsLink}>{k}</a></Link>
+                      <Link href={v} passHref>
+                        <a className={styles.friendsLink}>{k}</a>
+                      </Link>
                     </p>
                   ))}
                 </article>
