@@ -2,11 +2,10 @@ import styles from "./footer.module.css"
 export default function Footer({ }) {
   return (
     <>
-      
       <div className={styles.footerWrap}>
-        <div>
+        <div className={styles.footerContainer}>
           <div>
-            footer
+            <p>©2023 npofsi · powered by Next.js</p>
           </div>
         </div>
       </div>
