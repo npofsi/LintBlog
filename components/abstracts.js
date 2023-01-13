@@ -30,7 +30,7 @@ export default function Abstracts({ sortedPostsData }) {
                     <div className={styles.abstractsCardImgWrap}>
                       <img
                         className={styles.abstractsCardImg}
-                        src={v.img ? v.img : "/images/avatar2.jpg"}
+                        src={v.img ? v.img : "/images/bg-test.jpg"}
                       ></img>
                     </div>
                   </div>

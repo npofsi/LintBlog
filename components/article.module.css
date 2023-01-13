@@ -16,7 +16,7 @@
 .articleContainer{
   display: inline-block;
   padding: 1.5rem 2rem 2rem 2rem;
-  width: fit-content;
+  width: 90%;
   margin-top: 6rem;
   display: block;
   background-color: #fff;
