@@ -10,7 +10,7 @@ export default function SectionMain({ children }) {
         <div className={styles.psectionMainBgWrap}>
           <div className={styles.psectionMainBg}>
             <img className={styles.psectionMainBgImg}
-              src="./images/bg_triangle_top_right.png"
+              src="/images/bg_triangle_top_right.png"
             />
           </div>
         </div>

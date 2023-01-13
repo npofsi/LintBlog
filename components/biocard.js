@@ -12,7 +12,7 @@ export default function Biocard({}) {
         <div className={styles.biocardContainer}>
           <div className={styles.biocardContent}>
             <div className={styles.biocardAvatarWrap}>
-              <img className={styles.biocardAvatar} src="./images/avatar.jpg" />
+              <img className={styles.biocardAvatar} src="/images/avatar.jpg" />
             </div>
             <div className={styles.biocardContext}>
               <div className={styles.biocardName}>{name}</div>

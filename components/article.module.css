@@ -1,0 +1,30 @@
+.articleWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.articleInfo{
+  display: inline-block;
+  max-width: 44rem;
+  align-items: left;
+  justify-content: left;
+}
+
+.articleContainer{
+  display: inline-block;
+  padding: 1.5rem 2rem 2rem 2rem;
+  width: fit-content;
+  margin-top: 6rem;
+  display: block;
+  background-color: #fff;
+  max-width: 44rem;
+  box-shadow: #0002 0px 0px 10px;
+}
+
+.article{
+
+}
+

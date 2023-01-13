@@ -36,9 +36,13 @@
 .abstractsCardWrap {
   display: flex;
   flex-direction: column-reverse;
-  height: 20rem;
-  margin-top: 1.0rem;
+  height: 18rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.abstractsCardLink{
+  text-decoration: none;
 }
 
 .abstractsCard {
@@ -74,13 +78,12 @@
 .abstractsCardImg {
   display: inline-block;
   position: absolute;
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 8rem;
+  max-height: 8rem;
   border-radius: 0.75rem;
   z-index: 2;
   right: 0.5rem;
-  top: -11.5rem;
-  height: 10rem;
+  top: -11rem;
   box-shadow: #00000030 0 0 10px;
 }
 
@@ -91,8 +94,7 @@
   margin-top: 0.6rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: calc(80vw - 10rem);
-  
+  width: calc(80vw - 8rem);
   /* white-space: nowrap;; */
 }
 

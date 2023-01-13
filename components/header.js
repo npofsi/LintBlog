@@ -7,10 +7,10 @@ import Script from "next/script";
 import styles from "./header.module.css";
 
 const navigations = {
-  Home: ".",
-  Articles: "articles",
-  Intro: "intro",
-  Playground: "playground",
+  Home: "/",
+  Articles: "/articles",
+  Intro: "/intro",
+  Playground: "/playground",
 };
 const title = "";
 
@@ -38,7 +38,7 @@ export default function Header({ activeIndex }) {
           <div className={classNames(styles.navContainer)}>
           <div className={styles.headerNotificationWrap}>
             <div className={styles.headerNotification}>
-              <p>This website is under BUILDING</p>
+              <p>This website is under CONSTRUCTING</p>
             </div>
           </div>
             <nav className={styles.navbar}>
@@ -64,7 +64,7 @@ export default function Header({ activeIndex }) {
           </div>
         </header>
       </div>
-      <Script src="./scripts/inject.js"></Script>
+      <Script src="/scripts/inject.js"></Script>
     </>
   );
 }
