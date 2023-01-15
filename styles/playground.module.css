@@ -1,0 +1,34 @@
+.playgroundWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.playgroundList {
+}
+
+.playgroundItem {
+  display: block; 
+  background-color: white;
+  box-shadow: rgba(0,0,0,0.2) 0px 0px 15px;
+  border-radius: 0.75rem;
+  max-width: 44rem;
+  width: 90vw;
+  margin-bottom: 3rem;
+}
+
+.playgroundBgPadding{
+  background:  center url("/images/bg-test.jpg");
+  height: 10rem;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.playgroundContent{
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  width: 100%;
+}
+
+.playgroundLink {
+}

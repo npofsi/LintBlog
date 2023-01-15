@@ -11,6 +11,7 @@ const friends = {
   Hiiragi: "http://blog.hiirachan.moe/",
   Lakphy: "http://lakphy.github.io/",
 };
+
 export default function Intro({}) {
   return (
     <>

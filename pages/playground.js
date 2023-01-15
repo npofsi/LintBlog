@@ -1,12 +1,26 @@
-import Layout from "../components/layout"
+import Link from "next/link";
+import Layout from "../components/layout";
 import SectionMain from "../components/sectionMain";
-
-export default function Playground({ }) {
+import styles from "../styles/playground.module.css";
+export default function Playground({}) {
   return (
     <>
       <Layout navActiveIndex={3}>
-        <SectionMain></SectionMain>
+        <SectionMain>
+          <div className={styles.playgroundWrap}>
+            <div className={styles.playgroundList}>
+              <div className={styles.playgroundItem}>
+                <div className={styles.playgroundBgPadding}></div>
+                <div className={styles.playgroundContent}>
+                  <Link href={""}>
+                    <a className={styles.playgroundLink}>Example Project</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SectionMain>
       </Layout>
     </>
-  )
+  );
 }
