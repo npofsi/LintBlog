@@ -11,7 +11,7 @@
 .playgroundItem {
   display: block; 
   background-color: white;
-  box-shadow: rgba(0,0,0,0.2) 0px 0px 15px;
+  box-shadow: rgba(0,0,0,0.2) 0px 0px 40px;
   border-radius: 0.75rem;
   max-width: 44rem;
   width: 90vw;
@@ -19,7 +19,7 @@
 }
 
 .playgroundBgPadding{
-  background:  center url("/images/bg-test.jpg");
+  background: center url("/images/bg-test.jpg");
   height: 10rem;
   border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
 }
@@ -27,8 +27,17 @@
 .playgroundContent{
   padding: 1rem 2rem 1rem 2rem;
   display: flex;
+  align-items: baseline;
   width: 100%;
 }
 
 .playgroundLink {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.playgroundDesc {
+  margin-left: 1rem;
+  font-size: medium;
+  font-family:'Courier New', Courier, monospace;
+  color: rgba(0,0,0,0.7);
 }
