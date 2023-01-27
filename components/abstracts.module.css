@@ -18,8 +18,8 @@
 }
 
 .abstractsTitle {
-  color: aliceblue;
-  font-weight: normal;
+  color: #000000c0; 
+  font-weight: 800;
   font-family: "Overpass", "Noto Sans JP", -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", "Segoe UI", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   font-size: xx-large;
