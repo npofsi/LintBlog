@@ -35,3 +35,11 @@ img {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px)
 }
+
+.floatcard{
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0 40px;
+}

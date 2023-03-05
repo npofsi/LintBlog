@@ -5,12 +5,14 @@ import SectionMain from "../components/sectionMain";
 
 import styles from "../styles/intro.module.css";
 
-const friends = {
-  "Canary pwn": "https://aaaab3n.moe/",
-  "Jimmy Tian": "http://www.twznow.com/",
-  Hiiragi: "http://blog.hiirachan.moe/",
-  Lakphy: "http://lakphy.github.io/",
-};
+import classnames from "classnames";
+
+const friends = [
+  { name: "Canary pwn", link: "https://aaaab3n.moe/", avatar:"" },
+  { name: "Jimmy Tian", link: "http://www.twznow.com/", avatar:"" },
+  { name: "Hiiragi", link: "http://blog.hiirachan.moe/", avatar:"" },
+  { name: "Lakphy", link: "http://lakphy.github.io/", avatar:"" },
+];
 
 export default function Intro({}) {
   return (
@@ -64,16 +66,24 @@ export default function Intro({}) {
                   <p></p>
                   <br />
                   <h4>Friends:</h4>
-                  {Object.entries(friends).map(([k, v], i) => (
+                  {friends.map((friend) => (
                     <p>
-                      <Link href={v} passHref>
-                        <a className={styles.friendsLink}>{k}</a>
+                      <Link href={friend.link} passHref>
+                        <a className={styles.friendsLink}>{friend.name}</a>
                       </Link>
                     </p>
                   ))}
                 </article>
               </div>
             </div>
+            {/* <div className={styles.friendsContainer}>
+              <div className={classnames(styles.friendsWrap, "floatcard")}>
+                <div>Jimmy Tian</div>
+              </div>
+              <div className={classnames(styles.friendsWrap, "floatcard")}>
+                <div>Jimmy Tian</div>
+              </div>
+            </div> */}
           </div>
         </SectionMain>
       </Layout>
