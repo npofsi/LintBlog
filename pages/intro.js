@@ -8,10 +8,10 @@ import styles from "../styles/intro.module.css";
 import classnames from "classnames";
 
 const friends = [
-  { name: "Canary pwn", link: "https://aaaab3n.moe/", avatar:"" },
-  { name: "Jimmy Tian", link: "http://www.twznow.com/", avatar:"" },
-  { name: "Hiiragi", link: "http://blog.hiirachan.moe/", avatar:"" },
-  { name: "Lakphy", link: "http://lakphy.github.io/", avatar:"" },
+  { name: "Canary pwn", link: "https://aaaab3n.moe/", avatar: "https://pbs.twimg.com/profile_images/1531513095650091008/leCoXtqz_400x400.jpg" },
+  { name: "Jimmy Tian", link: "http://www.twznow.com/", avatar: "https://2f07.misaka.pet/assets/images/jimmytian@1x.png" },
+  { name: "Hiiragi", link: "http://blog.hiirachan.moe/", avatar: "https://avatars.githubusercontent.com/u/42064430?v=4" },
+  { name: "Lakphy", link: "http://lakphy.github.io/", avatar: "https://avatars.githubusercontent.com/u/34190570?v=4" },
 ];
 
 export default function Intro({}) {
@@ -64,26 +64,21 @@ export default function Intro({}) {
                   <p dir="auto">Love CoCo!</p>
                   <p dir="auto">Trying to be an electronics engineer.</p>
                   <p></p>
-                  <br />
-                  <h4>Friends:</h4>
-                  {friends.map((friend) => (
-                    <p>
-                      <Link href={friend.link} passHref>
-                        <a className={styles.friendsLink}>{friend.name}</a>
-                      </Link>
-                    </p>
-                  ))}
                 </article>
               </div>
             </div>
-            {/* <div className={styles.friendsContainer}>
-              <div className={classnames(styles.friendsWrap, "floatcard")}>
-                <div>Jimmy Tian</div>
-              </div>
-              <div className={classnames(styles.friendsWrap, "floatcard")}>
-                <div>Jimmy Tian</div>
-              </div>
-            </div> */}
+            <div className={styles.friendsContainer}>
+              {friends.map((friend) => (
+                <div className={classnames(styles.friendsWrap, "floatcard")}>
+                  <img
+                    className={styles.friendsAvatar}
+                    src={friend.avatar?friend.avatar:"/images/avatar.jpg"}
+                  ></img>
+                  <div>{friend.name}</div>
+                </div>
+              ))
+              }
+            </div>
           </div>
         </SectionMain>
       </Layout>
