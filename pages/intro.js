@@ -74,7 +74,7 @@ export default function Intro({}) {
                     className={styles.friendsAvatar}
                     src={friend.avatar?friend.avatar:"/images/avatar.jpg"}
                   ></img>
-                  <div>{friend.name}</div>
+                  <div><Link href={friend.link}>{friend.name}</Link></div>
                 </div>
               ))
               }
