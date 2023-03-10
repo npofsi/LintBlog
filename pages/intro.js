@@ -58,7 +58,7 @@ export default function Intro({}) {
                         ></path>
                       </svg>
                     </a> */}
-                    Hello
+                    YaHello
                   </h1>
                   <p dir="auto">I'm npofsi /bo:sI/.</p>
                   <p dir="auto">Love CoCo!</p>
