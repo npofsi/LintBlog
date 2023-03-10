@@ -67,6 +67,7 @@ export default function Intro({}) {
                 </article>
               </div>
             </div>
+            <h3 className={styles.friendsHeader}>Friends</h3>
             <div className={styles.friendsContainer}>
               {friends.map((friend) => (
                 <div className={classnames(styles.friendsWrap, "floatcard")}>
