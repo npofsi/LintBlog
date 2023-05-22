@@ -32,7 +32,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 默认即在 `~/.ssh/id_ALGORITHM`
 
-生成完后 
+生成完后
 
 `~/.ssh/id_ALGORITHM.pub` 为公钥文件;
 
@@ -72,8 +72,8 @@ touch ~/.ssh/config
 
 ```
 HOST github.com
-	User git
-	ForwardAgent yes
+ User git
+ ForwardAgent yes
 ```
 
 ## 测试
@@ -99,4 +99,3 @@ ssh -T git@github.com
 [生成新的 SSH 密钥并将其添加到 ssh-agent](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 [使用 SSH 代理转发](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding)
-
