@@ -14,14 +14,15 @@ tags:
 
 ## 创建 ssh 密钥
 
-```shell
-ssh-keygen -t ed25519 -C "your_email@example.com"
+```sh
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+
 ```
 
 如果不支持 ed25519，可以使用：
 
-```shell
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```sh
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 中间会需要选择密钥的创建位置等：
@@ -42,8 +43,8 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 执行
 
-```shell
-cat ~/.ssh/id_ALGORITHM.pub
+```sh
+$ cat ~/.ssh/id_ALGORITHM.pub
 ```
 
 复制输出的公钥
@@ -52,20 +53,20 @@ cat ~/.ssh/id_ALGORITHM.pub
 
 ## 启用 ssh agent
 
-```shell
-eval "$(ssh-agent -s)"
+```sh
+$ eval "$(ssh-agent -s)"
 ```
 
 然后将我们的密钥交给 ssh-agent 管理
 
-```shell
-ssh-add ~/.ssh/id_ALGORITHM
+```sh
+$ ssh-add ~/.ssh/id_ALGORITHM
 ```
 
 在 `~/.ssh/` 目录下新建一个 config 文件
 
-```shell
-touch ~/.ssh/config
+```sh
+$ touch ~/.ssh/config
 ```
 
 编辑加入以下内容：
@@ -82,14 +83,14 @@ HOST github.com
 
 使用这个命令检查密钥是否被加入 ssh-agent
 
-```shell
-ssh-add -L
+```sh
+$ ssh-add -L
 ```
 
 使用这个命令检查是否已经可以使用 ssh 访问 Github:
 
-```shell
-ssh -T git@github.com
+```sh
+$ ssh -T git@github.com
 ```
 
 如果以上命令返回了 success ，那么已经可以使用 ssh 访问 Github了！

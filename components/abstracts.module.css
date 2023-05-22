@@ -54,12 +54,15 @@
   border-radius: 0.75rem;
   padding: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
 }
 
 .abstractsCard:hover {
   transform: scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0 40px;
+  text-decoration: none;
 }
+
 
 .abstractsCardContent{
 }
