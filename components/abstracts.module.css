@@ -1,3 +1,5 @@
+@tailwind components;
+
 .abstractsListWrap {
   display: flex;
   flex-direction: column;
@@ -43,6 +45,12 @@
 
 .abstractsCardLink{
   text-decoration: none;
+  color: black;
+}
+
+.abstractsCardLink:hover{
+  text-decoration: none;
+  color: black;
 }
 
 .abstractsCard {
