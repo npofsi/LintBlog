@@ -28,10 +28,10 @@ export default function Abstracts({ sortedPostsData }) {
                       <div className={styles.abstractsCardAbs}>{v.content}</div>
                     </div>
                     <div className={styles.abstractsCardImgWrap}>
-                      <img
+                      {/* <img
                         className={styles.abstractsCardImg}
                         src={v.img ? v.img : "/images/bg-test.jpg"}
-                      ></img>
+                      ></img> */}
                     </div>
                   </div>
                 </a>
