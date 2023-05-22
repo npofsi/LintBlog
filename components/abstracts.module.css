@@ -60,7 +60,7 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 0.75rem;
-  padding: 1rem;
+  padding: 2rem;
   transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
 }
