@@ -81,6 +81,12 @@ right: 1.7rem;
 }
 
 .friendsLink{
+  color: #101010e0;
+  text-decoration: none;
+}
+
+.friendsLink:hover{
+  color: #101010e0;
   text-decoration: underline;
 }
 

@@ -105,7 +105,7 @@
   margin-top: 0.6rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: calc(80vw - 8rem);
+  width: calc(80vw);
   /* white-space: nowrap;; */
 }
 

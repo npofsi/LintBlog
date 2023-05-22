@@ -70,12 +70,12 @@ export default function Intro({}) {
             <h3 className={styles.friendsHeader}>Friends</h3>
             <div className={styles.friendsContainer}>
               {friends.map((friend) => (
-                <div className={classnames(styles.friendsWrap, "floatcard")}>
+                <div className={classnames(styles.friendsWrap, "floatcard")} key={friend.name}>
                   <img
                     className={styles.friendsAvatar}
                     src={friend.avatar?friend.avatar:"/images/avatar.jpg"}
                   ></img>
-                  <div><Link href={friend.link}>{friend.name}</Link></div>
+                  <div><Link href={friend.link} ><a className={styles.friendsLink}>{friend.name}</a></Link></div>
                 </div>
               ))
               }
