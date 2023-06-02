@@ -31,7 +31,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 > Enter a file in which to save the key (/c/Users/YOU/.ssh/id_ALGORITHM):[Press enter]
 ```
 
-默认即在 `~/.ssh/id_ALGORITHM`
+默认即在 `~/.ssh/id_ALGORITHM` __ALGORITHM__ 即上面创建密钥时使用的算法
 
 生成完后
 
