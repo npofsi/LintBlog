@@ -8,10 +8,27 @@ import styles from "../styles/intro.module.css";
 import classnames from "classnames";
 
 const friends = [
-  { name: "Canary pwn", link: "https://aaaab3n.moe/", avatar: "https://pbs.twimg.com/profile_images/1531513095650091008/leCoXtqz_400x400.jpg" },
-  { name: "Jimmy Tian", link: "http://www.twznow.com/", avatar: "https://2f07.misaka.pet/assets/images/jimmytian@1x.png" },
-  { name: "Hiiragi", link: "http://blog.hiirachan.moe/", avatar: "https://avatars.githubusercontent.com/u/42064430?v=4" },
-  { name: "Lakphy", link: "http://lakphy.github.io/", avatar: "https://avatars.githubusercontent.com/u/34190570?v=4" },
+  {
+    name: "Canary pwn",
+    link: "https://aaaab3n.moe/",
+    avatar:
+      "https://who.aaaab3n.moe/assets/canarypwn@1x.00a95518.webp",
+  },
+  {
+    name: "Jimmy Tian",
+    link: "http://www.twznow.com/",
+    avatar: "https://2f07.misaka.pet/assets/images/jimmytian@1x.png",
+  },
+  {
+    name: "Hiiragi",
+    link: "http://blog.hiirachan.moe/",
+    avatar: "https://avatars.githubusercontent.com/u/42064430?v=4",
+  },
+  {
+    name: "Lakphy",
+    link: "http://lakphy.github.io/",
+    avatar: "https://avatars.githubusercontent.com/u/34190570?v=4",
+  },
 ];
 
 export default function Intro({}) {
@@ -26,18 +43,16 @@ export default function Intro({}) {
           <div className={styles.introWrap}>
             <div className={styles.introHeader}>
               <h1 className={styles.introName}>Introduction</h1>
-              <div className={styles.introAvatarWrap}>
-                <img
-                  className={styles.introAvatar}
-                  src="/images/avatar.jpg"
-                ></img>
-              </div>
             </div>
 
             <div className={styles.introContainer}>
               <div className={styles.introContent}>
                 <article>
                   <h1 dir="auto" className={styles.introHeading}>
+                    <img
+                      className={styles.introAvatar}
+                      src="/images/avatar.jpg"
+                    ></img>
                     {/* <a
                       id="user-content-hello"
                       class="anchor"
@@ -58,6 +73,8 @@ export default function Intro({}) {
                         ></path>
                       </svg>
                     </a> */}
+                    <br/>
+                    
                     YaHello
                   </h1>
                   <p dir="auto">I'm npofsi /bo:sI/.</p>
@@ -70,15 +87,21 @@ export default function Intro({}) {
             <h3 className={styles.friendsHeader}>Friends</h3>
             <div className={styles.friendsContainer}>
               {friends.map((friend) => (
-                <div className={classnames(styles.friendsWrap, "floatcard")} key={friend.name}>
+                <div
+                  className={classnames(styles.friendsWrap, "floatcard")}
+                  key={friend.name}
+                >
                   <img
                     className={styles.friendsAvatar}
-                    src={friend.avatar?friend.avatar:"/images/avatar.jpg"}
+                    src={friend.avatar ? friend.avatar : "/images/avatar.jpg"}
                   ></img>
-                  <div><Link href={friend.link} ><a className={styles.friendsLink}>{friend.name}</a></Link></div>
+                  <div>
+                    <Link href={friend.link}>
+                      <a className={styles.friendsLink}>{friend.name}</a>
+                    </Link>
+                  </div>
                 </div>
-              ))
-              }
+              ))}
             </div>
           </div>
         </SectionMain>
