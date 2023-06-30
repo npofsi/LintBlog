@@ -16,7 +16,6 @@ tags:
 
 ```sh
 $ ssh-keygen -t ed25519 -C "your_email@example.com"
-
 ```
 
 如果不支持 ed25519，可以使用：
@@ -31,7 +30,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 > Enter a file in which to save the key (/c/Users/YOU/.ssh/id_ALGORITHM):[Press enter]
 ```
 
-默认即在 `~/.ssh/id_ALGORITHM` __ALGORITHM__ 即上面创建密钥时使用的算法
+密钥默认生成在 `~/.ssh/id_ALGORITHM`,`ALGORITHM` 即上面创建密钥时使用的算法
 
 生成完后
 
