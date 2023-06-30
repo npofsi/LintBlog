@@ -1,3 +1,4 @@
+import { parseISO, format } from "date-fns";
 import Link from "next/link";
 import styles from "./abstracts.module.css";
 
@@ -18,10 +19,7 @@ export default function Abstracts({ sortedPostsData }) {
                       <div className={styles.abstractsCardTitle}>{v.title}</div>
                       <div className={styles.abstractsCardMeta}>
                         <span>
-                          {(() => {
-                            v.date.replace(/(T|Z)/, " ");
-                            return v.date;
-                          })()}
+                          <time dateTime={v.date}>{format(parseISO(v.date),"LLLL d, yyyy")}</time>
                         </span>
                         <span></span>
                       </div>
