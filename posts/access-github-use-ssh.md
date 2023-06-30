@@ -30,9 +30,9 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 > Enter a file in which to save the key (/c/Users/YOU/.ssh/id_ALGORITHM):[Press enter]
 ```
 
-密钥默认生成在 `~/.ssh/id_ALGORITHM`,`ALGORITHM` 即上面创建密钥时使用的算法
+密钥默认生成在 `~/.ssh/id_ALGORITHM`,
 
-生成完后
+`ALGORITHM` 即上面创建密钥时使用的算法
 
 `~/.ssh/id_ALGORITHM.pub` 为公钥文件;
 
