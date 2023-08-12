@@ -94,6 +94,14 @@ $ ssh -T git@github.com
 
 如果以上命令返回了 success ，那么已经可以使用 ssh 访问 Github了！
 
+## Clone 仓库
+
+接着我们就能用下面的命令 clone 仓库了。
+
+```sh
+$ git clone <url>
+```
+
 相关文章：
 
 [生成新的 SSH 密钥并将其添加到 ssh-agent](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
