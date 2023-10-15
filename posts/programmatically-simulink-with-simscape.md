@@ -151,6 +151,8 @@ catch
 end
 ```
 
+以上这种情况更有可能发生在已有的手动建立的模型中，手动建立的连接线非常可能起始于不同的模块，但在程序建立连接线时，如果保证在函数中输入的端口顺序都一致的话就不会出现这种问题。
+
 refs:
 
 [Simulink - Programmatic Modeling Basics](https://ww2.mathworks.cn/help/simulink/ug/approach-modeling-programmatically.html)
