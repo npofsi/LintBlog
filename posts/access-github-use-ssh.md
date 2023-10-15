@@ -102,7 +102,7 @@ $ ssh -T git@github.com
 $ git clone <url>
 ```
 
-相关文章：
+refs：
 
 [生成新的 SSH 密钥并将其添加到 ssh-agent](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
