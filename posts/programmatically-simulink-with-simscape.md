@@ -153,6 +153,19 @@ end
 
 以上这种情况更有可能发生在已有的手动建立的模型中，手动建立的连接线非常可能起始于不同的模块，但在程序建立连接线时，如果保证在函数中输入的端口顺序都一致的话就不会出现这种问题。
 
+## 运行 Simulink 仿真
+
+运行模型就比较简单了，只需要调用 `sim` 函数：
+
+```matlab
+% 直接运行仿真，关于 sim 函数的更多参数请查看文档
+% https://ww2.mathworks.cn/help/simulink/slref/sim.html
+out = sim('model_name');
+
+% 或使用 set_param 方法调用 Simulink 的运行命令
+set_param('model_name','SimulationCommand','start');
+```
+
 refs:
 
 [Simulink - Programmatic Modeling Basics](https://ww2.mathworks.cn/help/simulink/ug/approach-modeling-programmatically.html)
