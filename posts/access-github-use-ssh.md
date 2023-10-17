@@ -4,7 +4,7 @@ date: 2023-05-22 10:12:28 +08:00
 categories:
 - Tip
 tags: 
-- Git
+- git
 - Github
 - ssh
 ---
