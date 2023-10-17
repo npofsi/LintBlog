@@ -104,7 +104,7 @@ delete_block('model_name/Subsystem1/BlockName')
 % 获取端口句柄(实际上是一个包含端口ID的列表)
 Block_PortHandle = get_param('model_name/BlockName','PortHandles')
 ```
-__注意__ 大部分 Simscape 电器模块的端口是双向的，所以 __不__ 需要指定端口的方向（即不能使用句柄中的`Inport`和`Output`，而是使用`LConn`和`RConn`，这两种并不区分方向，只是指示端口在模块的左侧还是右侧），这和 Simulink 中的一般模块不同，但 Simscape 模块之间的连接线在程序索引时依然 __区分__ 方向，在这一小节结尾会讨论这件事
+__注意__ 大部分 Simscape 电器模块的端口是双向的，所以 __不__ 需要指定端口的方向（即不能使用句柄中的`Inport`和`Outport`，而是使用`LConn`和`RConn`，这两个属性并不区分方向，只是指示端口在模块的左侧还是右侧），这和 Simulink 中的一般模块不同，但 Simscape 模块之间的连接线在程序索引时依然 __区分__ 方向，在这一小节结尾会讨论这件事
 
 模块的连接可以通过以下几个函数实现：
 
