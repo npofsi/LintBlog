@@ -16,21 +16,21 @@ const friends = [
   },
   {
     name: "Jimmy Tian",
-    link: "http://www.twznow.com/",
+    link: "https://www.twznow.com/",
     avatar: "https://2f07.misaka.pet/assets/images/jimmytian@1x.png",
   },
   {
     name: "Hiiragi",
-    link: "http://blog.hiirachan.moe/",
+    link: "https://blog.hiirachan.moe/",
     avatar: "https://avatars.githubusercontent.com/u/42064430?v=4",
   },
   {
     name: "Lakphy",
-    link: "http://lakphy.github.io/",
+    link: "https://lakphy.github.io/",
     avatar: "https://avatars.githubusercontent.com/u/34190570?v=4",
   },
   {
-    name: "WGQCreeper",
+    name: "Crpr",
     link: "http://wgqcreeper.xyz/",
     avatar: "https://raw.gitmirror.com/wgqcreeper/blogPics/main/202402271026809.png",
   },
@@ -82,7 +82,7 @@ export default function Intro({}) {
                     
                     YaHello
                   </h1>
-                  <p dir="auto">I'm npofsi /bo:sI/.</p>
+                  <p dir="auto">I'm npofsi /pos/.</p>
                   <p dir="auto">Love CoCo!</p>
                   <p dir="auto">Trying to be an electronics engineer.</p>
                   <p></p>
