@@ -29,6 +29,11 @@ const friends = [
     link: "http://lakphy.github.io/",
     avatar: "https://avatars.githubusercontent.com/u/34190570?v=4",
   },
+  {
+    name: "WGQCreeper",
+    link: "https://wgqcreeper.xyz/",
+    avatar: "https://raw.gitmirror.com/wgqcreeper/blogPics/main/202402271026809.png",
+  }
 ];
 
 export default function Intro({}) {
