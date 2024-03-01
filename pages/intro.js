@@ -31,9 +31,9 @@ const friends = [
   },
   {
     name: "WGQCreeper",
-    link: "https://wgqcreeper.xyz/",
+    link: "http://wgqcreeper.xyz/",
     avatar: "https://raw.gitmirror.com/wgqcreeper/blogPics/main/202402271026809.png",
-  }
+  },
 ];
 
 export default function Intro({}) {
