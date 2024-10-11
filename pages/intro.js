@@ -15,9 +15,9 @@ const friends = [
       "https://who.aaaab3n.moe/assets/canarypwn@1x.00a95518.webp",
   },
   {
-    name: "Jimmy Tian",
-    link: "https://www.twznow.com/",
-    avatar: "https://2f07.misaka.pet/assets/images/jimmytian@1x.png",
+    name: "Crpr",
+    link: "http://wgqcreeper.xyz/",
+    avatar: "https://raw.gitmirror.com/wgqcreeper/blogPics/main/202402271026809.png",
   },
   {
     name: "Hiiragi",
@@ -25,15 +25,21 @@ const friends = [
     avatar: "https://avatars.githubusercontent.com/u/42064430?v=4",
   },
   {
+    name: "Jimmy Tian",
+    link: "https://www.twznow.com/",
+    avatar: "https://2f07.misaka.pet/assets/images/jimmytian@1x.png",
+  },
+  {
     name: "Lakphy",
     link: "https://lakphy.github.io/",
     avatar: "https://avatars.githubusercontent.com/u/34190570?v=4",
   },
   {
-    name: "Crpr",
-    link: "http://wgqcreeper.xyz/",
-    avatar: "https://raw.gitmirror.com/wgqcreeper/blogPics/main/202402271026809.png",
+    name: "Sotr",
+    link: "https://kira.moe/",
+    avatar: "https://avatars.githubusercontent.com/u/39127005?v=4",
   },
+  
 ];
 
 export default function Intro({}) {
