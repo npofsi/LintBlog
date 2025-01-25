@@ -32,12 +32,12 @@
 }
 
 .playgroundLink {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .playgroundDesc {
   margin-left: 1rem;
   font-size: medium;
-  font-family:'Courier New', Courier, monospace;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgba(0,0,0,0.7);
 }

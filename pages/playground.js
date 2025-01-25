@@ -14,13 +14,13 @@ export default function Playground({}) {
           <div className={styles.playgroundWrap}>
             <div className={styles.playgroundList}>
               <div className={styles.playgroundItem}>
-                <div className={styles.playgroundBgPadding}></div>
-                <Link href={"/"}>
+                <div className={styles.playgroundBgPadding} style={{background: "center url('/canvas-painter/preview.png')"}}></div>
+                <Link href={"/canvas-painter/index.html"}>
                   <div className={styles.playgroundContent}>
                     <span className={styles.playgroundLink}>
-                      Example Project
+                    chenyulian / canvas-painter
                     </span>
-                    <span className={styles.playgroundDesc}>Description</span>
+                    <span className={styles.playgroundDesc}>一个支持 Stylus Web API 的画板</span>
                   </div>
                 </Link>
               </div>
