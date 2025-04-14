@@ -25,6 +25,17 @@ export default function Playground({}) {
                 </Link>
               </div>
             </div>
+            <div className={styles.playgroundItem}>
+                <div className={styles.playgroundBgPadding} style={{background: "center url('/sqooosh/preview.png')"}}></div>
+                <Link href={"/sqooosh/index.html"}>
+                  <div className={styles.playgroundContent}>
+                    <span className={styles.playgroundLink}>
+                    GoogleChromeLab / sqooosh
+                    </span>
+                    <span className={styles.playgroundDesc}>一个简单好用的图片压缩工具</span>
+                  </div>
+                </Link>
+              </div>
           </div>
         </SectionMain>
       </Layout>
