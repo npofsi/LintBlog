@@ -6,6 +6,8 @@
 }
 
 .playgroundList {
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 .playgroundItem {
